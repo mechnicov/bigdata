@@ -1,0 +1,26 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.32'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "io.reactivex.rxjava3:rxkotlin:3.0.1"
+    implementation "com.typesafe.akka:akka-actor_2.12:2.5.23"
+}
+
+task generate(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "IntegersFileGeneratorKt"
+}
+
+task calculate(type: JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    main = "CalculateKt"
+}
