@@ -2,3 +2,6 @@
 **/numbers.txt
 **/build
 **/.gradle
+**/export
+**/.ipynb_checkpoints
+**/spark-warehouse
