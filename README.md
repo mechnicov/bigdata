@@ -193,3 +193,17 @@ To analyze elections data run
 ```console
 $ jupyter-notebook task3/analyze_elections_data.ipynb
 ```
+
+## Задача на экзамене
+
+Скачать и обработать JSON-файл с данными о приложениях GooglePlay, провести выборку данных с помощью Spark.
+
+### Solution
+
+To get, parse and process data run
+
+```console
+$ jupyter-notebook task_exam/google_play.ipynb
+```
+
+JSON will be downloaded to `task_exam/export` folder.
